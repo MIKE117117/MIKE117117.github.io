@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--iconos-->
-
-    <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="cabecera">
-            <div class="contenedor_foto_perfil"></div>
-            <img src="img/img.png">
-            <div class="nombre_puesto"></div>
-            
-            <h1>Miguel A. Gutierrez Cruz</h1>
-            <h2>Desarrollador en Software</h2>
-           
+            <div class="contenedor_foto_perfil">
+                <img src="img/mia.png" alt="Foto de perfil">
+            </div>
+            <div class="nombre_puesto">
+                <h1>Miguel A. Gutierrez Cruz</h1>
+                <h2>Desarrollador en Software</h2>
+            </div>
         </div>
-    </div>
         <div class="contenido_cv">
-            <section>
+            <section class="habilidades">
                 <h3>Perfil Profesional</h3>
                 <hr>
                 <br>
@@ -32,90 +30,87 @@
                     Estoy entusiasmado por la oportunidad de aplicar mis habilidades técnicas y de gestión en [Nombre de la Empresa]. Adjunto mi currículum para su consideración y espero tener la oportunidad de discutir cómo puedo contribuir a su equipo.
                 </p>
                 <br>
-                <h3> <i class="fas fa-cogs"></i>Habilidades</h3>
+
+                <h3><i class="fas fa-cogs"></i> Habilidades</h3>
+                <hr>
+                
+                <div class="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+                </div>
+                <div class="habilidad">Trabajo en Equipo</div>
+                <br>
+
+                <div class="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+                </div>
+                <div class="habilidad">Gestión de proyectos</div>
+                <br>
+
+                <div class="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+                </div>
+                <div class="habilidad">Liderazgo</div>
+                <br>
+                
+                <h3><i class="fas fa-language"></i> Idiomas</h3>
                 <hr>
                 <br>
+
                 <div class="grafico">
-                    <div class="donut-hole"></div><!--agregamos el centro de la rosquilla-->
-               <div class="sector" id="sector1"> </div>
-               <div class="sector" id="sector2"> </div>
-               <div class="sector" id="sector3"> </div>
-            </div>
-            <div class="habilidad">Trabajo en Equipo</div>
-            <br>
-            <div class="grafico">
-                <div class="donut-hole"></div><!--agregamos el centro de la rosquilla-->
-           <div class="sector" id="sector1"> </div>
-           <div class="sector" id="sector2"> </div>
-           <div class="sector" id="sector3"> </div>
-        </div>
-        <div class="habilidad">Gestión de proyectos</div>
-            <br>
-            <div class="grafico">
-                <div class="donut-hole"></div><!--agregamos el centro de la rosquilla-->
-           <div class="sector" id="sector1"> </div>
-           <div class="sector" id="sector2"> </div>
-           <div class="sector" id="sector3"> </div>
-        </div>
-        <div class="habilidad">Liderazgo</div>
-            <br>
-            
-            <br>
-            <h3> <i class="fas fa-language"></i>Idiomas</h3>
-            <hr>
-            <br>
-            <div class="grafico">
-                <div class="donut-hole"></div><!--agregamos el centro de la rosquilla-->
-           <div class="sector" id="sector1"> </div>
-           <div class="sector" id="sector2"> </div>
-           <div class="sector" id="sector3"> </div>
-        </div>
-        <div class="habilidad">Inglés</div>
-        <br>
-        <div class="grafico">
-            <div class="donut-hole"></div><!--agregamos el centro de la rosquilla-->
-       <div class="sector" id="sector1"> </div>
-       <div class="sector" id="sector2"> </div>
-       <div class="sector" id="sector3"> </div>
-    </div>
-    <div class="habilidad">Español</div>
-        <br>
-        <div class="grafico">
-            <div class="donut-hole"></div><!--agregamos el centro de la rosquilla-->
-       <div class="sector" id="sector1"> </div>
-       <div class="sector" id="sector2"> </div>
-       <div class="sector" id="sector3"> </div>
-    </div>
-    <div class="habilidad">Liderazgo</div>
-        <br>
-        
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+                </div>
+                <div class="habilidad">Inglés</div>
+                <br>
 
+                <div class="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+                </div>
+                <div class="habilidad">Francés</div>
+                <br>
 
-        <br>
-        <h3> <i class="fas fa-envelope"></i>Información de contactos</h3>
-        <hr>
+                <div class="grafico">
+                    <div class="donut-hole"></div>
+                    <div class="sector" id="sector1"></div>
+                    <div class="sector" id="sector2"></div>
+                    <div class="sector" id="sector3"></div>
+                </div>
+                <div class="habilidad">Español</div>
+                <br>
+                <br>
 
-        <ul>
-            <li>Email:020000240@upsrj.edu.mx</li>
-            <li>Telefono: 4426596509</li>
-            <li>LinkedIn: <a href="#">Perfil en LinkedIn</a></li>
-
-        </ul>
-
-        <br>
-        
-    
+                <h3><i class="fas fa-envelope"></i> Información de contactos</h3>
+                <hr>
+                <br>
+                <ul>
+                    <li>Email: 020000240@upsrj.edu.mx</li>
+                    <li>Teléfono: 4426596509</li>
+                    <li>LinkedIn: <a href="#">Perfil en LinkedIn</a></li>
+                </ul>
             </section>
 
             <section class="experiencia">
-
-                <h3> <i class="fas fa- briefcase"></i>Experiencia Laboral</h3>
+                <h3><i class="fas fa-briefcase"></i> Experiencia Laboral</h3>
                 <hr>
+
                 <h4>Puesto</h4>
                 <div class="nombre_empresa">McDonald's</div>
                 <div class="año_puesto">2023-2024</div>
                 <p class="descripcion_puesto">Gerente de Área, McDonald's
-
                     <ul>
                         <li><strong>Liderazgo de Equipo:</strong> Dirigir y motivar a mi equipo de área para asegurar un servicio al cliente excepcional y operaciones eficientes.</li>
                         <li><strong>Supervisión de Productos:</strong> Monitorear y garantizar la calidad y frescura de los productos, cumpliendo con los estándares de la empresa.</li>
@@ -126,33 +121,26 @@
                 </p>
                 <br>
 
-                <hr>
                 <h4>Puesto</h4>
-                <div class="nombre_empresa"> Little Caesars's</div>
+                <div class="nombre_empresa">Little Caesars</div>
                 <div class="año_puesto">2020-2023</div>
                 <p class="descripcion_puesto">Asistente Gerencial, Little Caesars
-
                     <ul>
-                        <ul>
-                            <li><strong>Gestión de Nóminas:</strong> Administrar y procesar las nóminas del personal, asegurando la precisión y puntualidad en los pagos.</li>
-                            <li><strong>Liderazgo:</strong> Dirigir y motivar al equipo de trabajo para mantener altos estándares de servicio al cliente y eficiencia operativa.</li>
-                            <li><strong>Conteo:</strong> Realizar el conteo de efectivo y manejo de cajas, garantizando la exactitud en las transacciones diarias.</li>
-                            <li><strong>Recepción de Proveedores:</strong> Coordinar y supervisar la recepción de productos y suministros de los proveedores de la marca, asegurando el cumplimiento de los requisitos de calidad y cantidad.</li>
-                        </ul>
+                        <li><strong>Gestión de Nóminas:</strong> Administrar y procesar las nóminas del personal, asegurando la precisión y puntualidad en los pagos.</li>
+                        <li><strong>Liderazgo:</strong> Dirigir y motivar al equipo de trabajo para mantener altos estándares de servicio al cliente y eficiencia operativa.</li>
+                        <li><strong>Conteo:</strong> Realizar el conteo de efectivo y manejo de cajas, garantizando la exactitud en las transacciones diarias.</li>
+                        <li><strong>Recepción de Proveedores:</strong> Coordinar y supervisar la recepción de productos y suministros de los proveedores de la marca, asegurando el cumplimiento de los requisitos de calidad y cantidad.</li>
+                    </ul>
                 </p>
                 <br>
 
-                <h3> <i class="fas fa- graduation-cap"></i> Formación</h3>
+                <h3><i class="fas fa-graduation-cap"></i> Formación</h3>
                 <hr>
 
-
-
-
                 <h4>Carrera o Diplomado</h4>
-                <div class="nombre_empresa">Universidad Politecnica de Santa Rosa Jauregui</div>
+                <div class="nombre_empresa">Universidad Politécnica de Santa Rosa Jáuregui</div>
                 <div class="año_puesto">2022-2024</div>
                 <p class="descripcion_puesto">
-
                     <ul>
                         <li><strong>Liderazgo de Equipo:</strong> Dirigir y motivar a mi equipo de área para asegurar un servicio al cliente excepcional y operaciones eficientes.</li>
                         <li><strong>Supervisión de Productos:</strong> Monitorear y garantizar la calidad y frescura de los productos, cumpliendo con los estándares de la empresa.</li>
@@ -163,26 +151,20 @@
                 </p>
                 <br>
 
-                <hr>
                 <h4>Carrera o Diplomado</h4>
-                <div class="nombre_empresa"> Nombre del colegio</div>
+                <div class="nombre_empresa">Nombre del colegio</div>
                 <div class="año_puesto">2020-2023</div>
                 <p class="descripcion_puesto">
-
                     <ul>
-                        <ul>
-                            <li><strong>Gestión de Nóminas:</strong> Administrar y procesar las nóminas del personal, asegurando la precisión y puntualidad en los pagos.</li>
-                            <li><strong>Liderazgo:</strong> Dirigir y motivar al equipo de trabajo para mantener altos estándares de servicio al cliente y eficiencia operativa.</li>
-                            <li><strong>Conteo:</strong> Realizar el conteo de efectivo y manejo de cajas, garantizando la exactitud en las transacciones diarias.</li>
-                            <li><strong>Recepción de Proveedores:</strong> Coordinar y supervisar la recepción de productos y suministros de los proveedores de la marca, asegurando el cumplimiento de los requisitos de calidad y cantidad.</li>
-                        </ul>
+                        <li><strong>Gestión de Nóminas:</strong> Administrar y procesar las nóminas del personal, asegurando la precisión y puntualidad en los pagos.</li>
+                        <li><strong>Liderazgo:</strong> Dirigir y motivar al equipo de trabajo para mantener altos estándares de servicio al cliente y eficiencia operativa.</li>
+                        <li><strong>Conteo:</strong> Realizar el conteo de efectivo y manejo de cajas, garantizando la exactitud en las transacciones diarias.</li>
+                        <li><strong>Recepción de Proveedores:</strong> Coordinar y supervisar la recepción de productos y suministros de los proveedores de la marca, asegurando el cumplimiento de los requisitos de calidad y cantidad.</li>
+                    </ul>
                 </p>
                 <br>
-
             </section>
         </div>
-
     </div>
-    
 </body>
 </html>
