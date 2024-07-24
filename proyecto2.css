@@ -143,7 +143,7 @@
     --sidebar-color: white;
     --primary-color: grey;
     --primary-color-light:#9c27800D;
-    --background-image-dark: url('https://images8.alphacoders.com/354/thumb-1920-354232.jpg');
+    --background-image-dark: url('img/fondo-tecnologia-circuito-alta-tecnologia-digital_29971-542.avif');
     --toggle-color: blue;
     --text-color: grey;
 
@@ -155,7 +155,7 @@
 body {
     min-height: 100vh;
   overflow: hidden;
-    background-image: url('https://images5.alphacoders.com/350/thumb-1920-350025.jpg');
+    background-image: url('img/pngtree-vector-background-technology-in-the-concept-of-digital-picture-image_1816262.jpg');
     transition: var(--tran-05);
 }
 
@@ -532,3 +532,120 @@ border-radius: 100%;
     }
 
  
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar.close {
+        width: 0;
+    }
+
+    .sidebar .menu-links li a .text {
+        display: none;
+    }
+
+    .container {
+        margin-left: 60px;
+    }
+
+    .container.close {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .sidebar.close {
+        width: 250px;
+    }
+
+    .container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .slide .item {
+        height: 200px;
+    }
+
+    .item .content {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .item .content .name {
+        font-size: 18px;
+    }
+
+    .item .content .des {
+        font-size: 14px;
+    }
+
+    .button {
+        bottom: 10px;
+    }
+}
+
+
+.main-header {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .header-content {
+    display: flex;
+    gap: 15px;
+}
+
+.main-header .header-link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* Footer styles */
+.main-footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
