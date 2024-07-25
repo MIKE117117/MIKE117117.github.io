@@ -685,7 +685,7 @@ border-radius: 100%;
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 130%;
         padding: 15px;
     }
 
@@ -717,8 +717,8 @@ border-radius: 100%;
     }
 
     .item .content {
-        left: 10px; /* Reduce el espaciado desde el borde izquierdo */
-        width: calc(100% - 20px); /* Ajusta el ancho para dejar menos espacio a los lados */
+        left: 1000px; /* Reduce el espaciado desde el borde izquierdo */
+        width: calc(100% - 50px); /* Ajusta el ancho para dejar menos espacio a los lados */
     }
 }
 
@@ -730,5 +730,76 @@ border-radius: 100%;
     .item .content {
         left: 5px; /* Reduce aún más el espaciado desde el borde izquierdo */
         width: calc(100% - 10px); /* Ajusta el ancho para maximizar el espacio disponible */
+    }
+}
+
+
+
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .home {
+        margin-top: 70px;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .sidebar.open .menu-bar {
+        display: block;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .item {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fondo-blanco, .carta-presentacion {
+        padding: 20px;
+    }
+
+    .imagen-izquierda-dentro-texto {
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .home {
+        margin-left: 200px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .fondo-blanco, .carta-presentacion {
+        padding: 30px;
+    }
+
+    .imagen-izquierda-dentro-texto {
+        width: 50%;
+        margin: 0 auto 20px;
     }
 }
