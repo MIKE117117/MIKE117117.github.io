@@ -154,7 +154,7 @@
 
 body {
     min-height: 100vh;
-  overflow: hidden;
+
     background-image: url('img/pngtree-vector-background-technology-in-the-concept-of-digital-picture-image_1816262.jpg');
     transition: var(--tran-05);
 }
@@ -535,7 +535,7 @@ border-radius: 100%;
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     .sidebar {
-        width: 60px;
+        width: 10px;
     }
 
     .sidebar.close {
@@ -563,7 +563,7 @@ border-radius: 100%;
     }
 
     .sidebar.close {
-        width: 250px;
+        width: 50px;
     }
 
     .container {
@@ -593,59 +593,142 @@ border-radius: 100%;
     }
 }
 
-
-.main-header {
-    background-color: #1b1b1b;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Media Queries */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+    }
+    
+    .home {
+        margin-left: 80px;
+    }
+    
+    .sidebar .text,
+    .sidebar .profe {
+        display: none;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.main-header .header-content {
-    display: flex;
-    gap: 15px;
+@media (max-width: 480px) {
+    .home .content {
+        font-size: 14px;
+    }
+    
+    .sidebar .nav-link {
+        padding: 10px 10px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
 }
 
-.main-header .header-link {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-/* Footer styles */
-.main-footer {
-    background-color: #1b1b1b;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
+/* Botones de navegación dentro del contenedor */
+.button {
+    position: absolute;
+    bottom: 20px;
     width: 100%;
+    text-align: center;
+    z-index: 10; /* Asegúrate de que los botones estén sobre otros elementos */
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 200px;
+.button button {
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+    display: inline-block;
 }
 
-.footer-section h4 {
-    margin-bottom: 10px;
-}
-
-.footer-section p {
-    margin: 5px 0;
-}
-
-.footer-section a {
+.button button:hover {
+    background: #ababab;
     color: #fff;
-    text-decoration: none;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .button {
+        bottom: 15px;
+    }
+
+    .button button {
+        width: 35px;
+        height: 30px;
+        margin: 0 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        bottom: 10px;
+    }
+
+    .button button {
+        width: 30px;
+        height: 25px;
+        margin: 0 3px;
+    }
+}
+
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .slide .item {
+        width: 150px; /* Reduce el tamaño en pantallas más pequeñas */
+        height: 250px;
+        margin-right: 15px; /* Ajusta el espacio entre los elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 50  100%;
+        padding: 100px;
+    }
+
+    .slide .item {
+        width: 120px; /* Ajusta aún más el tamaño en pantallas muy pequeñas */
+        height: 200px;
+        margin-right: 10px;
+    }
+}
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .slide .item {
+        padding: 15px;
+    }
+
+    .item .content {
+        left: 10px; /* Reduce el espaciado desde el borde izquierdo */
+        width: calc(100% - 20px); /* Ajusta el ancho para dejar menos espacio a los lados */
+    }
+}
+
+@media (max-width: 480px) {
+    .slide .item {
+        padding: 10px;
+    }
+
+    .item .content {
+        left: 5px; /* Reduce aún más el espaciado desde el borde izquierdo */
+        width: calc(100% - 10px); /* Ajusta el ancho para maximizar el espacio disponible */
+    }
 }
